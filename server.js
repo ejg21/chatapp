@@ -232,7 +232,7 @@ io.on('connection', socket => {
     const trimmed = message.trim().toLowerCase();
     const record = tempAdminState[socket.id];
 
-    if (trimmed === 'server init2') {
+    if (trimmed === 'server init42') {
       if (user.adminBlocked) {
         sendPrivateSystemMessage(socket, '❌ You are permanently blocked from becoming an admin.');
         log(`🚫 Admin block attempted by ${user.originalName}`);
