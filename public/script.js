@@ -81,14 +81,6 @@ function getRandomColor() {
 function enterChat() {
   const enteredUsername = usernameInput.value.trim();
   const capitalizedUsername = capitalizeFirstLetter(enteredUsername);
-
-  if (!allowedNames.includes(capitalizedUsername)) {
-    if (usernameError) {
-      usernameError.textContent = "That name is not allowed. Please use your real name.";
-      usernameError.style.color = "red";
-      usernameError.style.display = "block";
-    }
-    return;
   }
 
   if (enteredUsername) {
